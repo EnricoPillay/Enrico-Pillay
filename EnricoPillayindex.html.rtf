@@ -1,0 +1,152 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Enrico Pillay \'96 Freelance Producer</title>\
+    <style>\
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');\
+\
+        :root \{\
+            --bg-start: #111111;\
+            --bg-end:   #444444;\
+        \}\
+\
+        /* ---------- Base layout ---------- */\
+        body \{\
+            margin: 0;\
+            height: 100vh;\
+            overflow: hidden;\
+            background: linear-gradient(to right, var(--bg-start), var(--bg-end));\
+            color: #fff;\
+            font-family: 'Inter', sans-serif;\
+        \}\
+\
+        .container \{\
+            position: relative;\
+            width: 100%;\
+            height: 100%;\
+        \}\
+\
+        /* ---------- Logo (EP) ---------- */\
+        .logo \{\
+            position: absolute;\
+            top: 20px;\
+            left: 20px;\
+            font-size: 24px;\
+            font-weight: 700;\
+            letter-spacing: 1px;\
+        \}\
+\
+        /* ---------- Animated\uc0\u8209 photo area (left) ---------- */\
+        .animation-area \{\
+            position: absolute;\
+            top: 50%;\
+            left: 25%;            /* roughly where you drew the blob */\
+            transform: translate(-50%, -50%);\
+            width: 460px;          /* can be tweaked later */\
+            height: 460px;\
+            border-radius: 50%;\
+            overflow: hidden;      /* hide edges of incoming frames */\
+        \}\
+\
+        /* placeholder background while empty */\
+        .animation-area::before \{\
+            content: "";\
+            position: absolute;\
+            inset: 0;\
+            background: rgba(255,255,255,0.04);\
+            border: 1px dashed rgba(255,255,255,0.15);\
+        \}\
+\
+        /* ---------- Name + subtitle block (right) ---------- */\
+        .title-wrapper \{\
+            position: absolute;\
+            top: 50%;\
+            left: 75%;           /* mirrored offset so visual balance */\
+            transform: translate(-50%, -50%);\
+            text-align: center;\
+            white-space: nowrap;\
+        \}\
+\
+        .title \{\
+            margin: 0;\
+            font-size: 8vw;\
+            font-weight: 900;\
+            letter-spacing: -2px;\
+            line-height: 0.9;\
+        \}\
+\
+        .freelance \{\
+            margin-top: 12px;\
+            font-size: 14px;\
+            font-weight: 400;\
+        \}\
+\
+        /* ---------- Footer nav ---------- */\
+        .nav \{\
+            position: absolute;\
+            bottom: 30px;\
+            right: 40px;\
+            display: flex;\
+            flex-direction: column;\
+            gap: 10px;\
+            font-size: 14px;\
+        \}\
+\
+        .nav a \{ color: #fff; text-decoration: none; \}\
+        .nav a:hover \{ text-decoration: underline; \}\
+\
+        /* ---------- Simple fade\uc0\u8209 up animation (optional) ---------- */\
+        @keyframes fadeUp \{ from\{opacity:0; transform:translateY(20px);\} to\{opacity:1; transform:none;\} \}\
+        .logo, .title-wrapper, .nav \{ animation: fadeUp 0.8s ease 0.2s both; \}\
+\
+        /* ---------- Responsive tweak ---------- */\
+        @media (max-width: 900px) \{\
+            .animation-area \{ left: 50%; top: 30%; width: 300px; height: 300px; \}\
+            .title-wrapper \{ left: 50%; top: 70%; transform: translate(-50%, -50%); \}\
+            .title \{ font-size: 14vw; \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="container">\
+        <div class="logo">EP</div>\
+\
+        <!-- 
+\f1 \uc0\u55357 \u56628 
+\f0   Animated photo / slideshow will go here  -->\
+        <div class="animation-area" id="slideshow"></div>\
+\
+        <!--  Name & subtitle  -->\
+        <div class="title-wrapper">\
+            <h1 class="title">ENRICO&nbsp;PILLAY</h1>\
+            <div class="freelance">FREELANCE PRODUCER</div>\
+        </div>\
+\
+        <!--  Nav  -->\
+        <div class="nav">\
+            <a href="#about">ABOUT</a>\
+            <a href="#work">WORK</a>\
+            <a href="#contact">CONTACT</a>\
+        </div>\
+    </div>\
+\
+    <!--  
+\f1 \uc0\u55357 \u56615 
+\f0   Slideshow script placeholder (to be filled once images are uploaded)  -->\
+    <script>\
+      /* After you upload the 10 images we can inject JS here to cycle them \
+         inside #slideshow at ~100\uc0\u8209 150\u8239 ms per frame for a quick\u8209 succession effect. */\
+    </script>\
+</body>\
+</html>\
+}
